@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>urban catalyst | research solutions</title>
+    <title>urban catalyst | from data to decisions</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -13,54 +13,82 @@
     <header>
         <div class="logo">urban catalyst</div>
         <nav>
+            <a href="#about">about</a>
             <a href="#services">services</a>
-            <a href="#solutions">solutions</a>
-            <button class="nav-btn" onclick="showPopup()">get a quote</button>
+            <a href="#contact" class="nav-cta">request sample</a>
         </nav>
     </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">empowering businesses with actionable insights</span>
+            <h1>urban catalyst – <br><span>data that drives decisions</span></h1>
+            <p>we provide actionable market insights to help businesses make smarter faster decisions</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="showPopup()">get a quote</button>
+                <button class="btn-secondary">view solutions</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>helping brands understand what truly matters</h2>
+            <p>urban catalyst is a market research and insights company helping organizations understand their customers markets and trends we combine advanced analytics with real world data to deliver meaningful business outcomes</p>
+        </div>
+    </section>
+
     <section id="services" class="services">
         <div class="container">
-            <div class="section-info">
-                <span class="eyebrow">our capabilities</span>
-                <h2>research solutions</h2>
-                <p>tailored methodologies for high-stakes business decisions</p>
+            <div class="section-head">
+                <span class="tag">accurate fast and reliable</span>
+                <h2>our core services</h2>
             </div>
-            
             <div class="service-grid">
-                <div class="s-card">
-                    <div class="s-icon">01</div>
-                    <h3>quantitative research</h3>
-                    <p>scalable surveys designed for speed and rapid global delivery across 60+ markets</p>
-                </div>
+                <div class="s-card"><h3>quantitative research</h3><p>high quality data collection at scale</p></div>
+                <div class="s-card"><h3>qualitative research</h3><p>interviews and focus groups for deep insights</p></div>
+                <div class="s-card"><h3>consumer insights</h3><p>understanding behavior and trends</p></div>
+                <div class="s-card"><h3>data analytics</h3><p>meaningful reporting and outcomes</p></div>
                 <div class="s-card featured">
-                    <div class="s-icon">02</div>
-                    <h3>qualitative insights</h3>
-                    <p>uncover motivations and emotions through in-depth focus groups and expert moderation</p>
-                </div>
-                <div class="s-card">
-                    <div class="s-icon">03</div>
-                    <h3>survey programming</h3>
-                    <p>multilingual support and complex logic built to perform flawlessly on any device</p>
+                    <h3>b2b & it specialist</h3>
+                    <p>we specialize in b2b and it decision maker research with director+ level respondents globally</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-strip">
-        <h2>ready to move your business forward?</h2>
-        <button class="btn-main" onclick="showPopup()">contact an expert</button>
+    <section class="industries">
+        <div class="container">
+            <h3>industries we serve</h3>
+            <div class="ind-list">
+                <span>technology</span> <span>healthcare</span> <span>finance</span> <span>retail</span> <span>public sector</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-area">
+        <div class="contact-card">
+            <h2>start your research</h2>
+            <form id="leadForm">
+                <input type="text" placeholder="full name" required>
+                <input type="text" placeholder="company name" required>
+                <input type="email" placeholder="work email" required>
+                <select>
+                    <option>project type</option>
+                    <option>quantitative</option>
+                    <option>qualitative</option>
+                </select>
+                <textarea placeholder="your message"></textarea>
+                <button type="submit" class="btn-primary">start research</button>
+            </form>
+        </div>
     </section>
 
     <div id="popup" class="modal-bg">
         <div class="modal">
-            <h3>request research feasibility</h3>
-            <p>our team usually responds within 60 minutes</p>
-            <input type="email" placeholder="work email address">
-            <div class="modal-btns">
-                <button class="btn-main">submit</button>
-                <button class="btn-text" onclick="closePopup()">close</button>
-            </div>
+            <h3>request sample</h3>
+            <p>recent study example: survey of 2000 it decision makers across us uk and india</p>
+            <button onclick="closePopup()">close</button>
         </div>
     </div>
 </body>
