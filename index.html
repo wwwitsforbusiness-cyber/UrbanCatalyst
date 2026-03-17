@@ -4,137 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Urban Catalyst</title>
+<title>Urban Catalyst Dashboard</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Alumni+Sans:wght@300;500;700&family=Bevan&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
-<header class="nav">
-  <div class="logo">URBAN CATALYST</div>
-  <nav>
-    <a href="#services">SERVICES</a>
-    <a href="#industries">INDUSTRIES</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
-</header>
+<div class="app">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>URBAN CATALYST – DATA THAT DRIVES DECISIONS</h1>
-    <h2>We provide actionable market insights to help businesses make smarter, faster decisions.</h2>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>URBAN</h2>
+    <nav>
+      <a class="active">DASHBOARD</a>
+      <a>SERVICES</a>
+      <a>INSIGHTS</a>
+      <a>CLIENTS</a>
+      <a>CONTACT</a>
+    </nav>
+  </aside>
 
-    <div class="btn-group">
-      <button class="primary">GET A QUOTE</button>
-      <button class="secondary">VIEW SOLUTIONS</button>
-    </div>
-  </div>
-</section>
+  <!-- MAIN -->
+  <main class="main">
 
-<!-- ABOUT -->
-<section class="about">
-  <div class="container">
-    <h2>ABOUT US</h2>
-    <p>
-      Urban Catalyst is a market research and insights company helping organizations understand their customers, markets, and trends. We combine advanced analytics with real-world data to deliver meaningful business outcomes.
-    </p>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="services">
-  <div class="container">
-    <h2>SERVICES</h2>
-
-    <div class="grid">
-      <div class="card">📊 QUANTITATIVE RESEARCH</div>
-      <div class="card">🧠 QUALITATIVE RESEARCH</div>
-      <div class="card">🌍 CONSUMER INSIGHTS</div>
-      <div class="card">📈 DATA ANALYTICS & REPORTING</div>
-      <div class="card">🎯 B2B & IT DECISION MAKER RESEARCH</div>
-    </div>
-  </div>
-</section>
-
-<!-- INDUSTRIES -->
-<section id="industries" class="industries">
-  <div class="container">
-    <h2>INDUSTRIES WE SERVE</h2>
-
-    <div class="tags">
-      <span>TECHNOLOGY / IT</span>
-      <span>HEALTHCARE</span>
-      <span>FINANCE</span>
-      <span>RETAIL</span>
-      <span>PUBLIC SECTOR</span>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="why">
-  <div class="container">
-    <h2>WHY CHOOSE US</h2>
-
-    <ul>
-      <li>HIGH-QUALITY RESPONDENTS</li>
-      <li>FAST TURNAROUND</li>
-      <li>GLOBAL REACH (US, UK, INDIA, UAE, SA, GE, BR, DE)</li>
-      <li>ACCURATE AND RELIABLE DATA</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ADVANTAGE -->
-<section class="advantage">
-  <div class="container">
-    <h2>SMART ADVANTAGE</h2>
-
-    <p>WE SPECIALIZE IN B2B AND IT DECISION-MAKER RESEARCH</p>
-    <p>DIRECTOR+ LEVEL RESPONDENTS GLOBALLY</p>
-
-    <div class="highlight">
-      <h3>RECENT STUDY EXAMPLE</h3>
-      <p>SURVEY OF 2,000 IT DECISION-MAKERS ACROSS US, UK, INDIA</p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <div class="container">
-    <h2>FROM DATA TO DECISIONS</h2>
-    <p>ACCURATE, FAST, AND RELIABLE RESEARCH SOLUTIONS</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>START RESEARCH</h2>
-
-    <form>
-      <input type="text" placeholder="NAME" required>
-      <input type="text" placeholder="COMPANY" required>
-      <input type="email" placeholder="EMAIL" required>
-
-      <select required>
-        <option>PROJECT TYPE</option>
-        <option>QUANTITATIVE</option>
-        <option>QUALITATIVE</option>
-        <option>B2B RESEARCH</option>
-      </select>
-
-      <textarea placeholder="MESSAGE"></textarea>
-
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <h1>DATA THAT DRIVES DECISIONS</h1>
       <button class="primary">REQUEST SAMPLE</button>
-    </form>
-  </div>
-</section>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="card">
+        <h3>2000+</h3>
+        <p>RESPONDENTS</p>
+      </div>
+      <div class="card">
+        <h3>50+</h3>
+        <p>GLOBAL PROJECTS</p>
+      </div>
+      <div class="card">
+        <h3>15+</h3>
+        <p>INDUSTRIES</p>
+      </div>
+      <div class="card">
+        <h3>98%</h3>
+        <p>DATA ACCURACY</p>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="charts">
+      <div class="chart-box">
+        <canvas id="chart1"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="chart2"></canvas>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <h2>SERVICES</h2>
+
+      <div class="grid">
+        <div class="card">QUANTITATIVE RESEARCH</div>
+        <div class="card">QUALITATIVE RESEARCH</div>
+        <div class="card">CONSUMER INSIGHTS</div>
+        <div class="card">DATA ANALYTICS</div>
+        <div class="card">B2B RESEARCH</div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="contact">
+      <h2>START RESEARCH</h2>
+
+      <form>
+        <input placeholder="NAME">
+        <input placeholder="COMPANY">
+        <input type="email" placeholder="EMAIL">
+        <textarea placeholder="MESSAGE"></textarea>
+
+        <button class="primary">START RESEARCH</button>
+      </form>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
