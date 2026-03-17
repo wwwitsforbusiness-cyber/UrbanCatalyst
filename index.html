@@ -9,70 +9,68 @@
 </head>
 <body>
     <div id="cursor"></div>
-    <div class="noise-overlay"></div>
+    <div class="noise"></div>
     
     <header>
         <div class="logo">urban catalyst</div>
         <nav>
             <a href="#insights">insights</a>
             <a href="#reach">reach</a>
-            <a href="#contact" class="nav-btn">work with us</a>
+            <a href="#contact" class="nav-cta">get started</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <span class="reveal-tag">next-gen analytics</span>
-                <h1 class="split-text">insights that drive<br><span class="gradient">smarter decisions</span></h1>
-                <p>we transform fragmented market data into competitive advantages for global enterprises</p>
-                <div class="cta-group">
-                    <button class="m-btn p-btn" onclick="showPopup()">explore metrics</button>
-                    <button class="m-btn s-btn">view portfolio</button>
+            <div class="hero-inner">
+                <div class="tag">powered by urban catalyst</div>
+                <h1>insights that drive <br><span class="highlight">smarter decisions</span></h1>
+                <p>we decode complex global data into actionable growth strategies for modern enterprises</p>
+                <div class="hero-btns">
+                    <button class="btn-main" onclick="showPopup()">explore dashboard</button>
+                    <button class="btn-alt">view reports</button>
                 </div>
             </div>
         </section>
 
-        <section id="insights" class="grid-section">
-            <div class="section-info">
-                <h2 class="title">intelligence metrics</h2>
-                <p>real-time tracking across major sectors</p>
-            </div>
+        <section id="insights" class="bento-section">
+            <h2 class="section-label">market intelligence</h2>
             <div class="bento-grid">
-                <div class="bento-card large">
+                <div class="bento-item large-card">
+                    <h3>growth metrics</h3>
                     <div class="chart">
-                        <div class="bar-col"><div class="bar" data-h="75%"></div><span>q1</span></div>
-                        <div class="bar-col"><div class="bar" data-h="90%"></div><span>q2</span></div>
-                        <div class="bar-col"><div class="bar" data-h="65%"></div><span>q3</span></div>
+                        <div class="bar-col"><div class="bar" style="--h: 70%"></div><span>jan</span></div>
+                        <div class="bar-col"><div class="bar" style="--h: 50%"></div><span>feb</span></div>
+                        <div class="bar-col"><div class="bar" style="--h: 95%"></div><span>mar</span></div>
                     </div>
                 </div>
-                <div class="bento-card small">
-                    <h3>99.9%</h3>
-                    <p>data accuracy rate</p>
+                <div class="bento-item stats-card">
+                    <div class="stat-num">99%</div>
+                    <p>data accuracy</p>
                 </div>
-                <div class="bento-card small">
-                    <h3>24/7</h3>
-                    <p>active monitoring</p>
+                <div class="bento-item stats-card">
+                    <div class="stat-num">24/7</div>
+                    <p>live tracking</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="footer-cta">
-            <div class="cta-box">
-                <h2>ready to scale?</h2>
-                <div class="email-form">
+        <section id="contact" class="cta-section">
+            <div class="cta-card">
+                <h2>ready to lead the market</h2>
+                <div class="form-box">
                     <input type="email" placeholder="enter your work email">
-                    <button>connect now</button>
+                    <button>connect</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <div id="popup" class="modal-overlay">
+    <div id="popup" class="modal-bg">
         <div class="modal">
-            <h3>premium reports</h3>
-            <p>get full access to our proprietary research data</p>
-            <button onclick="closePopup()">close</button>
+            <h3>premium access</h3>
+            <p>your professional dashboard is ready to be unlocked</p>
+            <button onclick="closePopup()">dismiss</button>
         </div>
     </div>
 </body>
