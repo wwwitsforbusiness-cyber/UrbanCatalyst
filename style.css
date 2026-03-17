@@ -1,70 +1,116 @@
-body {
+* {
   margin: 0;
-  font-family: 'Alumni Sans', sans-serif;
-  text-transform: uppercase;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* NAV */
-.nav {
-  position: fixed;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-/* PANELS */
-.panel {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero {
-  background: url('assets/hero.jpg') center/cover;
-  color: white;
-}
-
-.light {
+body {
   background: #F8F3E1;
   color: #41431B;
 }
 
-.dark {
-  background: #000;
-  color: white;
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 60px 0;
 }
 
-.dashboard {
-  background: #E3DBBB;
-}
-
-/* TYPOGRAPHY */
-h1 {
-  font-size: 60px;
-  font-family: 'Bevan';
-}
-
-h2 {
-  font-size: 40px;
+h1, h2 {
+  margin-bottom: 20px;
 }
 
 p {
-  margin-top: 10px;
-  opacity: 0.7;
+  line-height: 1.6;
 }
 
-/* BUTTON */
-button {
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.buttons {
   margin-top: 20px;
-  padding: 15px 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.primary {
   background: #AEB784;
-  border: none;
-  cursor: pointer;
+  color: #000;
+}
+
+.secondary {
+  border: 1px solid #AEB784;
+  color: #41431B;
+}
+
+/* ALT SECTION */
+.about, .industries, .advantage {
+  background: #E3DBBB;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1 1 250px;
+  border-radius: 8px;
+}
+
+.tag {
+  padding: 10px 15px;
+  background: white;
+  border-radius: 5px;
+}
+
+/* WHY */
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
 }
