@@ -3,75 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>urban catalyst | intelligence</title>
+    <title>urban catalyst | smarter decisions</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="glow-bg"></div>
+    <div id="cursor"></div>
+    <canvas id="canvas-bg"></canvas>
+    
     <header>
-        <div class="logo">urban catalyst</div>
+        <div class="logo-container">
+            <span class="logo-text">urban catalyst</span>
+        </div>
         <nav>
             <a href="#insights">insights</a>
             <a href="#map">reach</a>
-            <a href="#clients">partners</a>
+            <a href="#contact" class="nav-cta">get started</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1 class="gradient-text">market research intelligence</h1>
-        <p>decoding complex data into actionable growth strategies</p>
+        <div class="badge">ai powered analytics</div>
+        <h1 class="gradient-text">urban catalyst</h1>
+        <p class="tagline">insights that drive smarter decisions</p>
         <div class="hero-actions">
-            <button class="primary-btn" onclick="showPopup()">unlock insights</button>
-            <button class="secondary-btn">learn more</button>
+            <button class="primary-btn pulse" onclick="showPopup()">explore dashboard</button>
+            <button class="secondary-btn">view case studies</button>
         </div>
     </section>
 
     <section id="insights" class="section">
-        <h2 class="title">quarterly growth</h2>
-        <div class="chart">
-            <div class="bar-group">
-                <div class="bar" style="height: 60%;"><span>60%</span></div>
-                <label>jan</label>
-            </div>
-            <div class="bar-group">
-                <div class="bar" style="height: 45%;"><span>45%</span></div>
-                <label>feb</label>
-            </div>
-            <div class="bar-group">
-                <div class="bar" style="height: 90%;"><span>90%</span></div>
-                <label>mar</label>
+        <h2 class="title">market intelligence</h2>
+        <div class="chart-container">
+            <div class="chart">
+                <div class="bar-group"><div class="bar" data-h="85%"><span>85%</span></div><label>growth</label></div>
+                <div class="bar-group"><div class="bar" data-h="60%"><span>60%</span></div><label>reach</label></div>
+                <div class="bar-group"><div class="bar" data-h="92%"><span>92%</span></div><label>accuracy</label></div>
             </div>
         </div>
     </section>
 
-    <section id="map" class="section">
-        <h2 class="title">global reach</h2>
-        <div class="map-box">
-            <p>usa &bull; uk &bull; india &bull; germany</p>
-            <div class="map-dots">connecting nodes...</div>
-        </div>
-    </section>
-
-    <section id="clients" class="section">
-        <h2 class="title">trusted by leaders</h2>
-        <div class="feedback-container">
-            <div class="card">
-                <p>"the most reliable data partner we have worked with"</p>
-                <small>- fortune 500 client</small>
-            </div>
-            <div class="card">
-                <p>"accurate analytics delivered with impressive speed"</p>
-                <small>- tech startup founder</small>
+    <section id="contact" class="section">
+        <div class="contact-card">
+            <h2>ready for smarter decisions?</h2>
+            <p>join 500+ global partners today</p>
+            <div class="input-group">
+                <input type="email" placeholder="enter work email">
+                <button class="glow-on-hover">connect</button>
             </div>
         </div>
     </section>
 
     <div id="popup" class="overlay">
         <div class="popup-box">
-            <h2>premium access</h2>
-            <p>get our q1 reports delivered to your inbox</p>
-            <button class="close-btn" onclick="closePopup()">dismiss</button>
+            <div class="icon-circle">✓</div>
+            <h2>intelligence unlocked</h2>
+            <p>our q1 market report is now available for download</p>
+            <button class="close-btn" onclick="closePopup()">continue</button>
         </div>
     </div>
 </body>
