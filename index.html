@@ -1,126 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Urban Catalyst</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Urban Catalyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Alumni+Sans:wght@300;500;700&family=Bevan&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Urban Catalyst – Data That Drives Decisions</h1>
-    <p>We provide actionable market insights to help businesses make smarter, faster decisions.</p>
-    
-    <div class="buttons">
-      <a href="#contact" class="btn primary">Get a Quote</a>
-      <a href="#services" class="btn secondary">View Solutions</a>
-    </div>
-  </div>
-</section>
+<div id="app">
 
-<!-- ABOUT -->
-<section class="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>
-      Urban Catalyst is a market research and insights company helping organizations understand their customers, markets, and trends. We combine advanced analytics with real-world data to deliver meaningful business outcomes.
-    </p>
-  </div>
-</section>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__logo">URBAN CATALYST</div>
+    <nav class="nav__menu">
+      <a>Services</a>
+      <a>Insights</a>
+      <a>Contact</a>
+    </nav>
+  </header>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container">
-    <h2>Services</h2>
+  <!-- SCROLL WRAPPER -->
+  <main class="scroll">
 
-    <div class="grid">
-      <div class="card">📊 Quantitative Research</div>
-      <div class="card">🧠 Qualitative Research</div>
-      <div class="card">🌍 Consumer Insights</div>
-      <div class="card">📈 Data Analytics & Reporting</div>
-      <div class="card">🎯 B2B & IT Decision Maker Research</div>
-    </div>
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <h1>DATA THAT DRIVES DECISIONS</h1>
+        <p>EMPOWERING BUSINESSES WITH ACTIONABLE INSIGHTS</p>
+      </div>
+    </section>
 
-<!-- INDUSTRIES -->
-<section class="industries">
-  <div class="container">
-    <h2>Industries We Serve</h2>
+    <!-- FEATURE BLOCK -->
+    <section class="feature">
+      <div class="feature__text">
+        <h2>QUANTITATIVE RESEARCH</h2>
+        <p>ACCURATE FAST RELIABLE DATA</p>
+      </div>
+      <div class="feature__visual"></div>
+    </section>
 
-    <div class="grid">
-      <div class="tag">Technology / IT</div>
-      <div class="tag">Healthcare</div>
-      <div class="tag">Finance</div>
-      <div class="tag">Retail</div>
-      <div class="tag">Public Sector</div>
-    </div>
-  </div>
-</section>
+    <!-- SPLIT SECTION -->
+    <section class="split">
+      <div class="split__left">
+        <h2>GLOBAL REACH</h2>
+      </div>
+      <div class="split__right">
+        <p>US UK INDIA UAE SA GE BR DE</p>
+      </div>
+    </section>
 
-<!-- WHY US -->
-<section class="why">
-  <div class="container">
-    <h2>Why Choose Us</h2>
+  </main>
 
-    <ul>
-      <li>✔ High-quality respondents</li>
-      <li>✔ Fast turnaround</li>
-      <li>✔ Global reach (US, UK, India, UAE, SA, GE, BR, DE)</li>
-      <li>✔ Accurate and reliable data</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ADVANTAGE -->
-<section class="advantage">
-  <div class="container">
-    <h2>Our Advantage</h2>
-
-    <p>We specialize in B2B and IT decision-maker research</p>
-    <p>Director+ level respondents globally</p>
-
-    <div class="highlight">
-      <h3>Recent Study Example</h3>
-      <p>Survey of 2,000 IT decision-makers across US, UK, India</p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <div class="container">
-    <h2>From data to decisions</h2>
-    <p>Accurate, fast, and reliable research solutions</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-    <h2>Start Your Research</h2>
-
-    <form id="leadForm">
-      <input type="text" placeholder="Name" required />
-      <input type="text" placeholder="Company" required />
-      <input type="email" placeholder="Email" required />
-      
-      <select required>
-        <option value="">Project Type</option>
-        <option>Quantitative</option>
-        <option>Qualitative</option>
-        <option>B2B Research</option>
-      </select>
-
-      <textarea placeholder="Message"></textarea>
-
-      <button type="submit" class="btn primary">Start Research</button>
-    </form>
-  </div>
-</section>
+</div>
 
 <script src="script.js"></script>
 </body>
