@@ -6,92 +6,65 @@
 
 <title>Urban Catalyst</title>
 
-<!-- fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Alumni+Sans:wght@300;500;700&family=Bevan&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<!-- gsap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- popup -->
-<div id="popup">
-  <div class="popup-box">
-    <h2>🚨 get premium insights</h2>
-    <p>request sample report now</p>
-    <button onclick="closePopup()">close</button>
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">URBAN CATALYST</div>
+  <div class="menu">
+    <span>SERVICES</span>
+    <span>INSIGHTS</span>
+    <span>CONTACT</span>
   </div>
-</div>
+</nav>
 
-<!-- hero -->
-<section class="hero">
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-    <h1>urban catalyst</h1>
-    <h2>data that drives decisions</h2>
-
-    <p>empowering businesses with actionable insights</p>
-
-    <div class="btns">
-      <button class="primary">get a quote</button>
-      <button class="secondary">view solutions</button>
-    </div>
-  </div>
+<!-- HERO -->
+<section class="panel hero">
+  <h1>DATA THAT DRIVES DECISIONS</h1>
+  <p>EMPOWERING BUSINESSES WITH ACTIONABLE INSIGHTS</p>
 </section>
 
-<!-- about -->
-<section class="about fade">
-  <h2>about us</h2>
-  <p>
-    urban catalyst is a market research and insights company helping organizations understand customers markets and trends
-  </p>
+<!-- SECTION 1 -->
+<section class="panel light">
+  <h2>QUANTITATIVE RESEARCH</h2>
+  <p>ACCURATE DATA. REAL DECISIONS.</p>
 </section>
 
-<!-- services -->
-<section class="services fade">
-  <h2>services</h2>
-
-  <div class="grid">
-    <div class="card">quantitative research</div>
-    <div class="card">qualitative research</div>
-    <div class="card">consumer insights</div>
-    <div class="card">data analytics</div>
-    <div class="card">b2b research</div>
-  </div>
+<!-- SECTION 2 -->
+<section class="panel dark">
+  <h2>QUALITATIVE INSIGHTS</h2>
+  <p>UNDERSTAND WHAT TRULY MATTERS</p>
 </section>
 
-<!-- dashboard -->
-<section class="dashboard">
-  <h2>live insights dashboard</h2>
-
-  <div class="dash-grid">
-    <canvas id="chart1"></canvas>
-    <canvas id="chart2"></canvas>
-    <div id="map">global reach map</div>
-  </div>
+<!-- SECTION 3 -->
+<section class="panel light">
+  <h2>B2B DECISION MAKERS</h2>
+  <p>DIRECTOR+ LEVEL RESPONDENTS GLOBALLY</p>
 </section>
 
-<!-- dark section -->
-<section class="dark-bg">
-  <h2>from data to decisions</h2>
+<!-- SECTION 4 -->
+<section class="panel dark">
+  <h2>GLOBAL REACH</h2>
+  <p>US UK INDIA UAE SA GE BR DE</p>
 </section>
 
-<!-- contact -->
-<section class="contact">
-  <h2>start research</h2>
+<!-- DASHBOARD -->
+<section class="panel dashboard">
+  <h2>LIVE MARKET INSIGHTS</h2>
+  <canvas id="chart"></canvas>
+</section>
 
-  <form id="form">
-    <input type="text" placeholder="name" required>
-    <input type="email" placeholder="email" required>
-    <textarea placeholder="message"></textarea>
-
-    <button type="submit">start research</button>
-  </form>
+<!-- CTA -->
+<section class="panel cta">
+  <h2>FROM DATA TO DECISIONS</h2>
+  <button>START RESEARCH</button>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
