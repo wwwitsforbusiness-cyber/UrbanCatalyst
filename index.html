@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Catalyst</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<h2>Urban Catalyst</h2>
+<nav>
+<a href="#insights">Insights</a>
+<a href="#map">Global Reach</a>
+<a href="#clients">Clients</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1 onclick="makeBold(this)">Market Research Intelligence</h1>
+<p onclick="makeBold(this)">Click text to highlight key insights dynamically</p>
+<button onclick="showPopup()">Explore Insights</button>
+</section>
+
+<section id="insights">
+<h2>Last 3 Months Insights</h2>
+<div class="graph">
+<div class="bar" style="height:70%">Jan</div>
+<div class="bar" style="height:50%">Feb</div>
+<div class="bar" style="height:90%">Mar</div>
+</div>
+</section>
+
+<section id="map">
+<h2>Global Coverage</h2>
+<p>Countries: USA, UK, India, Germany</p>
+<div class="map">[ World Map Placeholder ]</div>
+</section>
+
+<section id="clients">
+<h2>Client Feedback</h2>
+<div class="review">"Highly reliable research partner"</div>
+<div class="review">"Accurate data and fast delivery"</div>
+<div class="review">"Professional insights and great support"</div>
+</section>
+
+<div id="popup" class="popup">
+<div class="popup-content">
+<p>🔥 Premium Insights Unlocked</p>
+<button onclick="closePopup()">Close</button>
+</div>
+</div>
+
+</body>
+</html>
