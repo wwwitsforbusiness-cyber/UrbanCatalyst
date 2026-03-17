@@ -1,24 +1,23 @@
-gsap.registerPlugin(ScrollTrigger);
+// smooth scroll engine
+let current = 0;
+let target = 0;
 
-gsap.utils.toArray(".panel").forEach(panel => {
-  gsap.from(panel, {
-    opacity: 0,
-    y: 100,
-    duration: 1,
-    scrollTrigger: {
-      trigger: panel,
-      start: "top 80%"
-    }
-  });
-});
+function smoothScroll() {
+  target = window.scrollY;
+  current += (target - current) * 0.08;
 
-// chart
-new Chart(document.getElementById("chart"), {
-  type: 'line',
-  data: {
-    labels: ["US","UK","INDIA"],
-    datasets: [{
-      data: [200,150,300]
-    }]
-  }
+  document.querySelector(".scroll").style.transform =
+    `translateY(-${current}px)`;
+
+  requestAnimationFrame(smoothScroll);
+}
+
+smoothScroll();
+
+
+// hero parallax
+window.addEventListener("scroll", () => {
+  let y = window.scrollY;
+  document.querySelector(".hero__bg").style.transform =
+    `scale(1.2) translateY(${y * 0.3}px)`;
 });
