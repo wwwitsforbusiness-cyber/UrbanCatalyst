@@ -1,20 +1,15 @@
-// professional transitions
-function showPopup() {
-    document.getElementById('popup').style.display = 'flex';
-}
+// custom cursor logic
+const cursor = document.getElementById('cursor')
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px'
+    cursor.style.top = e.clientY + 'px'
+})
 
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
+// cursor reaction
+document.querySelectorAll('button, a, .s-card').forEach(item => {
+    item.addEventListener('mouseenter', () => cursor.style.transform = 'scale(5)')
+    item.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)')
+})
 
-// scroll reveal effect
-window.addEventListener('scroll', () => {
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        if (cardTop < window.innerHeight - 100) {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        }
-    });
-});
+function showPopup() { document.querySelector('.modal-bg').style.display = 'flex' }
+function closePopup() { document.querySelector('.modal-bg').style.display = 'none' }
