@@ -1,116 +1,110 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: 'Alumni Sans', sans-serif;
   background: #F8F3E1;
   color: #41431B;
 }
 
-.container {
-  width: 85%;
-  margin: auto;
-  padding: 60px 0;
-}
-
-h1, h2 {
-  margin-bottom: 20px;
-}
-
-p {
-  line-height: 1.6;
-}
-
-/* HERO */
+/* hero */
 .hero {
+  height: 100vh;
+  background: url('assets/hero.jpg') center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
   text-align: center;
-  padding: 100px 20px;
 }
 
-.buttons {
-  margin-top: 20px;
+.hero h1 {
+  font-family: 'Bevan';
+  font-size: 60px;
 }
 
-.btn {
-  padding: 12px 24px;
+.hero h2 {
+  font-family: 'Allura';
+  font-size: 40px;
+}
+
+/* buttons */
+button {
+  padding: 12px 25px;
+  border: none;
   margin: 10px;
-  text-decoration: none;
-  border-radius: 6px;
-  display: inline-block;
+  cursor: pointer;
 }
 
 .primary {
   background: #AEB784;
-  color: #000;
 }
 
 .secondary {
-  border: 1px solid #AEB784;
-  color: #41431B;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
 }
 
-/* ALT SECTION */
-.about, .industries, .advantage {
-  background: #E3DBBB;
+/* sections */
+section {
+  padding: 80px 10%;
+  text-align: center;
 }
 
-/* GRID */
 .grid {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
   padding: 20px;
-  flex: 1 1 250px;
-  border-radius: 8px;
+  flex: 1;
 }
 
-.tag {
-  padding: 10px 15px;
-  background: white;
-  border-radius: 5px;
+/* dashboard */
+.dashboard {
+  background: #E3DBBB;
 }
 
-/* WHY */
-ul {
-  list-style: none;
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
 }
 
-ul li {
-  margin: 10px 0;
+/* dark section */
+.dark-bg {
+  background: url('assets/bg-dark.jpg') center/cover;
+  color: white;
 }
 
-/* CTA */
-.cta {
+/* popup */
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,0,0,0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: black;
+  color: red;
+  padding: 40px;
   text-align: center;
-}
-
-/* CONTACT */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, select, textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-textarea {
-  min-height: 100px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
-  }
 }
