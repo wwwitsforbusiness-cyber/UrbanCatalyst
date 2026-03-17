@@ -3,63 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>urban catalyst | smarter decisions</title>
+    <title>urban catalyst | market intelligence</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div id="cursor"></div>
-    <canvas id="canvas-bg"></canvas>
+    <div class="noise-overlay"></div>
     
     <header>
-        <div class="logo-container">
-            <span class="logo-text">urban catalyst</span>
-        </div>
+        <div class="logo">urban catalyst</div>
         <nav>
             <a href="#insights">insights</a>
-            <a href="#map">reach</a>
-            <a href="#contact" class="nav-cta">get started</a>
+            <a href="#reach">reach</a>
+            <a href="#contact" class="nav-btn">work with us</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="badge">ai powered analytics</div>
-        <h1 class="gradient-text">urban catalyst</h1>
-        <p class="tagline">insights that drive smarter decisions</p>
-        <div class="hero-actions">
-            <button class="primary-btn pulse" onclick="showPopup()">explore dashboard</button>
-            <button class="secondary-btn">view case studies</button>
-        </div>
-    </section>
-
-    <section id="insights" class="section">
-        <h2 class="title">market intelligence</h2>
-        <div class="chart-container">
-            <div class="chart">
-                <div class="bar-group"><div class="bar" data-h="85%"><span>85%</span></div><label>growth</label></div>
-                <div class="bar-group"><div class="bar" data-h="60%"><span>60%</span></div><label>reach</label></div>
-                <div class="bar-group"><div class="bar" data-h="92%"><span>92%</span></div><label>accuracy</label></div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="reveal-tag">next-gen analytics</span>
+                <h1 class="split-text">insights that drive<br><span class="gradient">smarter decisions</span></h1>
+                <p>we transform fragmented market data into competitive advantages for global enterprises</p>
+                <div class="cta-group">
+                    <button class="m-btn p-btn" onclick="showPopup()">explore metrics</button>
+                    <button class="m-btn s-btn">view portfolio</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="contact-card">
-            <h2>ready for smarter decisions?</h2>
-            <p>join 500+ global partners today</p>
-            <div class="input-group">
-                <input type="email" placeholder="enter work email">
-                <button class="glow-on-hover">connect</button>
+        <section id="insights" class="grid-section">
+            <div class="section-info">
+                <h2 class="title">intelligence metrics</h2>
+                <p>real-time tracking across major sectors</p>
             </div>
-        </div>
-    </section>
+            <div class="bento-grid">
+                <div class="bento-card large">
+                    <div class="chart">
+                        <div class="bar-col"><div class="bar" data-h="75%"></div><span>q1</span></div>
+                        <div class="bar-col"><div class="bar" data-h="90%"></div><span>q2</span></div>
+                        <div class="bar-col"><div class="bar" data-h="65%"></div><span>q3</span></div>
+                    </div>
+                </div>
+                <div class="bento-card small">
+                    <h3>99.9%</h3>
+                    <p>data accuracy rate</p>
+                </div>
+                <div class="bento-card small">
+                    <h3>24/7</h3>
+                    <p>active monitoring</p>
+                </div>
+            </div>
+        </section>
 
-    <div id="popup" class="overlay">
-        <div class="popup-box">
-            <div class="icon-circle">✓</div>
-            <h2>intelligence unlocked</h2>
-            <p>our q1 market report is now available for download</p>
-            <button class="close-btn" onclick="closePopup()">continue</button>
+        <section id="contact" class="footer-cta">
+            <div class="cta-box">
+                <h2>ready to scale?</h2>
+                <div class="email-form">
+                    <input type="email" placeholder="enter your work email">
+                    <button>connect now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="popup" class="modal-overlay">
+        <div class="modal">
+            <h3>premium reports</h3>
+            <p>get full access to our proprietary research data</p>
+            <button onclick="closePopup()">close</button>
         </div>
     </div>
 </body>
