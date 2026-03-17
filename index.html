@@ -1,14 +1,67 @@
-<section class="hero-premium">
-    <div class="hero-overlay"></div>
-    <div class="hero-container">
-        <div class="hero-content">
-            <span class="eyebrow-tag">Global Market Intelligence</span>
-            <h1 class="main-title">Insights that drive <br><strong>smarter decisions.</strong></h1>
-            <p class="hero-desc">We empower global research teams with precision panels and verified human intelligence to turn market complexity into clarity.</p>
-            <div class="hero-cta-group">
-                <button class="btn-filled" onclick="showPopup()">View Solutions</button>
-                <button class="btn-text">Our Panels &rarr;</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban catalyst | research solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <header>
+        <div class="logo">urban catalyst</div>
+        <nav>
+            <a href="#services">services</a>
+            <a href="#solutions">solutions</a>
+            <button class="nav-btn" onclick="showPopup()">get a quote</button>
+        </nav>
+    </header>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-info">
+                <span class="eyebrow">our capabilities</span>
+                <h2>research solutions</h2>
+                <p>tailored methodologies for high-stakes business decisions</p>
+            </div>
+            
+            <div class="service-grid">
+                <div class="s-card">
+                    <div class="s-icon">01</div>
+                    <h3>quantitative research</h3>
+                    <p>scalable surveys designed for speed and rapid global delivery across 60+ markets</p>
+                </div>
+                <div class="s-card featured">
+                    <div class="s-icon">02</div>
+                    <h3>qualitative insights</h3>
+                    <p>uncover motivations and emotions through in-depth focus groups and expert moderation</p>
+                </div>
+                <div class="s-card">
+                    <div class="s-icon">03</div>
+                    <h3>survey programming</h3>
+                    <p>multilingual support and complex logic built to perform flawlessly on any device</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <h2>ready to move your business forward?</h2>
+        <button class="btn-main" onclick="showPopup()">contact an expert</button>
+    </section>
+
+    <div id="popup" class="modal-bg">
+        <div class="modal">
+            <h3>request research feasibility</h3>
+            <p>our team usually responds within 60 minutes</p>
+            <input type="email" placeholder="work email address">
+            <div class="modal-btns">
+                <button class="btn-main">submit</button>
+                <button class="btn-text" onclick="closePopup()">close</button>
             </div>
         </div>
     </div>
-</section>
+</body>
+</html>
