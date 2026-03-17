@@ -3,82 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>urban catalyst | precision market research</title>
+    <title>urban catalyst | market research excellence</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">urban catalyst</div>
-        <nav>
-            <a href="#services">services</a>
-            <a href="#solutions">solutions</a>
-            <a href="#contact" class="btn-nav">get a quote</a>
-        </nav>
+        <div class="container nav-wrapper">
+            <div class="logo">urban catalyst</div>
+            <nav>
+                <a href="#solutions">solutions</a>
+                <a href="#methodology">methodology</a>
+                <a href="#contact" class="btn-sm">request proposal</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <span class="eyebrow">data you can trust</span>
-                <h1>insights that drive<br><span>smarter decisions</span></h1>
-                <p>we empower global research teams with precision panels and verified human intelligence to turn market complexity into clarity</p>
-                <div class="hero-btns">
-                    <button class="btn-primary" onclick="showPopup()">view research solutions</button>
-                    <button class="btn-link">learn about our panels &rarr;</button>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">precision data panels</span>
+                    <h1>insights that drive<br><strong>smarter decisions</strong></h1>
+                    <p>urban catalyst delivers verified human intelligence through high-performance research panels across 60+ global markets</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="showPopup()">get started</button>
+                        <button class="btn-outline">our capabilities &rarr;</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="data-card animate-float">
+                        <div class="line"></div>
+                        <div class="line short"></div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="abstract-shape"></div>
-            </div>
-        </section>
-
-        <div class="trust-bar">
-            <div class="stat"><span>60+</span> countries</div>
-            <div class="stat"><span>24h</span> feasibility</div>
-            <div class="stat"><span>100%</span> verified data</div>
         </div>
+    </section>
 
-        <section id="services" class="services">
-            <div class="section-header">
-                <h2>our research solutions</h2>
-                <p>tailored methodologies for high-stakes business decisions</p>
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-head">
+                <h2>tailored research solutions</h2>
+                <p>we bridge the gap between complex data and strategic action</p>
             </div>
-            <div class="service-grid">
-                <div class="s-card">
-                    <div class="s-num">01</div>
-                    <h3>quantitative research</h3>
-                    <p>scalable surveys designed for speed and rapid global delivery across 60+ markets</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon">📊</div>
+                    <h3>quantitative</h3>
+                    <p>global reach with locally verified respondents for scalable data sets</p>
                 </div>
-                <div class="s-card active">
-                    <div class="s-num">02</div>
-                    <h3>qualitative insights</h3>
-                    <p>uncover motivations and emotions through in-depth focus groups and expert moderation</p>
+                <div class="card active">
+                    <div class="icon">🔍</div>
+                    <h3>qualitative</h3>
+                    <p>in-depth human insights through expert moderation and focus groups</p>
                 </div>
-                <div class="s-card">
-                    <div class="s-num">03</div>
-                    <h3>survey programming</h3>
-                    <p>multilingual support and complex logic built to perform flawlessly on any device</p>
+                <div class="card">
+                    <div class="icon">⚙️</div>
+                    <h3>programming</h3>
+                    <p>complex survey logic and multilingual hosting for global deployment</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-cta">
-            <div class="cta-inner">
-                <h2>ready to move your business forward?</h2>
-                <p>schedule a feasibility consultation in under 1 hour</p>
-                <button class="btn-white" onclick="showPopup()">contact an expert</button>
-            </div>
-        </section>
-    </main>
+    <section class="cta-banner">
+        <div class="container">
+            <h2>ready for smarter market intelligence?</h2>
+            <button class="btn-white" onclick="showPopup()">contact our team</button>
+        </div>
+    </section>
 
-    <div id="popup" class="modal-wrapper">
+    <div id="popup" class="modal-overlay">
         <div class="modal">
-            <h3>request research feasibility</h3>
-            <p>our team usually responds within 60 minutes</p>
+            <h3>connect with an expert</h3>
+            <p>provide your details and we will reach out within 1 business hour</p>
             <input type="email" placeholder="work email address">
             <button class="btn-primary">submit request</button>
-            <button class="btn-close" onclick="closePopup()">close</button>
+            <button class="btn-text" onclick="closePopup()">close</button>
         </div>
     </div>
 </body>
