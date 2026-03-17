@@ -1,0 +1,21 @@
+// chart 1
+new Chart(document.getElementById("chart1"), {
+  type: "bar",
+  data: {
+    labels: ["US","UK","INDIA","UAE"],
+    datasets: [{
+      data: [300,200,400,150]
+    }]
+  }
+});
+
+// chart 2
+new Chart(document.getElementById("chart2"), {
+  type: "line",
+  data: {
+    labels: ["Q1","Q2","Q3","Q4"],
+    datasets: [{
+      data: [100,250,180,300]
+    }]
+  }
+});
