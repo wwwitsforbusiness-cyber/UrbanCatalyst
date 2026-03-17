@@ -1,17 +1,20 @@
-// simple genuine interactions
+// professional transitions
 function showPopup() {
-    document.querySelector('.modal-wrapper').style.display = 'flex';
+    document.getElementById('popup').style.display = 'flex';
 }
 
 function closePopup() {
-    document.querySelector('.modal-wrapper').style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
 }
 
-// hover effect logic for service cards
-const cards = document.querySelectorAll('.s-card');
-cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        cards.forEach(c => c.classList.remove('active'));
-        card.classList.add('active');
+// scroll reveal effect
+window.addEventListener('scroll', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < window.innerHeight - 100) {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }
     });
 });
