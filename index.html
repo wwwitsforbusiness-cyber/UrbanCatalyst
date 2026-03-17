@@ -1,59 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Urban Catalyst</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban catalyst | market intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <header>
+        <div class="logo">urban catalyst</div>
+        <nav>
+            <a href="#insights">insights</a>
+            <a href="#map">reach</a>
+            <a href="#clients">clients</a>
+        </nav>
+    </header>
 
-<header>
-<h2>Urban Catalyst</h2>
-<nav>
-<a href="#insights">Insights</a>
-<a href="#map">Global Reach</a>
-<a href="#clients">Clients</a>
-</nav>
-</header>
+    <section class="hero">
+        <h1 class="reveal-text">market research intelligence</h1>
+        <p>driving strategic growth through data backed insights</p>
+        <div class="hero-btns">
+            <button class="btn-primary" onclick="showPopup()">get started</button>
+            <button class="btn-secondary">view reports</button>
+        </div>
+    </section>
 
-<section class="hero">
-<h1 onclick="makeBold(this)">Market Research Intelligence</h1>
-<p onclick="makeBold(this)">Click text to highlight key insights dynamically</p>
-<button onclick="showPopup()">Explore Insights</button>
-</section>
+    <section id="insights" class="container">
+        <h2 class="section-title">growth metrics</h2>
+        <div class="graph-container">
+            <div class="graph">
+                <div class="bar-wrapper">
+                    <div class="bar" style="height:70%"><span>70%</span></div>
+                    <p>jan</p>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height:50%"><span>50%</span></div>
+                    <p>feb</p>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height:95%"><span>95%</span></div>
+                    <p>mar</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="insights">
-<h2>Last 3 Months Insights</h2>
-<div class="graph">
-<div class="bar" style="height:70%">Jan</div>
-<div class="bar" style="height:50%">Feb</div>
-<div class="bar" style="height:90%">Mar</div>
-</div>
-</section>
+    <section id="map" class="container">
+        <h2 class="section-title">global coverage</h2>
+        <div class="map-card">
+            <p>usa &bull; uk &bull; india &bull; germany</p>
+            <div class="map-visual">interactive world map overlay</div>
+        </div>
+    </section>
 
-<section id="map">
-<h2>Global Coverage</h2>
-<p>Countries: USA, UK, India, Germany</p>
-<div class="map">[ World Map Placeholder ]</div>
-</section>
+    <section id="clients" class="container">
+        <h2 class="section-title">what partners say</h2>
+        <div class="testimonial-grid">
+            <div class="review-card">
+                <p>"highly reliable research partner for our scaling needs"</p>
+                <span>tech corp ceo</span>
+            </div>
+            <div class="review-card">
+                <p>"accurate data and fast delivery every single time"</p>
+                <span>marketing head</span>
+            </div>
+            <div class="review-card">
+                <p>"professional insights and top notch support team"</p>
+                <span>ops manager</span>
+            </div>
+        </div>
+    </section>
 
-<section id="clients">
-<h2>Client Feedback</h2>
-<div class="review">"Highly reliable research partner"</div>
-<div class="review">"Accurate data and fast delivery"</div>
-<div class="review">"Professional insights and great support"</div>
-</section>
-
-<div id="popup" class="popup">
-<div class="popup-content">
-<p>🔥 Premium Insights Unlocked</p>
-<button onclick="closePopup()">Close</button>
-</div>
-</div>
-
+    <div id="popup" class="modal">
+        <div class="modal-content">
+            <h3>unlock premium data</h3>
+            <p>access our full q1 report and industry trends</p>
+            <button class="btn-primary" onclick="closePopup()">close</button>
+        </div>
+    </div>
 </body>
 </html>
