@@ -3,74 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>urban catalyst | market intelligence</title>
+    <title>urban catalyst | precision market research</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="cursor"></div>
-    <div class="noise"></div>
-    
     <header>
         <div class="logo">urban catalyst</div>
         <nav>
-            <a href="#insights">insights</a>
-            <a href="#reach">reach</a>
-            <a href="#contact" class="nav-cta">get started</a>
+            <a href="#services">services</a>
+            <a href="#solutions">solutions</a>
+            <a href="#contact" class="btn-nav">get a quote</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-inner">
-                <div class="tag">powered by urban catalyst</div>
-                <h1>insights that drive <br><span class="highlight">smarter decisions</span></h1>
-                <p>we decode complex global data into actionable growth strategies for modern enterprises</p>
+            <div class="hero-text">
+                <span class="eyebrow">data you can trust</span>
+                <h1>insights that drive<br><span>smarter decisions</span></h1>
+                <p>we empower global research teams with precision panels and verified human intelligence to turn market complexity into clarity</p>
                 <div class="hero-btns">
-                    <button class="btn-main" onclick="showPopup()">explore dashboard</button>
-                    <button class="btn-alt">view reports</button>
+                    <button class="btn-primary" onclick="showPopup()">view research solutions</button>
+                    <button class="btn-link">learn about our panels &rarr;</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="abstract-shape"></div>
+            </div>
+        </section>
+
+        <div class="trust-bar">
+            <div class="stat"><span>60+</span> countries</div>
+            <div class="stat"><span>24h</span> feasibility</div>
+            <div class="stat"><span>100%</span> verified data</div>
+        </div>
+
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>our research solutions</h2>
+                <p>tailored methodologies for high-stakes business decisions</p>
+            </div>
+            <div class="service-grid">
+                <div class="s-card">
+                    <div class="s-num">01</div>
+                    <h3>quantitative research</h3>
+                    <p>scalable surveys designed for speed and rapid global delivery across 60+ markets</p>
+                </div>
+                <div class="s-card active">
+                    <div class="s-num">02</div>
+                    <h3>qualitative insights</h3>
+                    <p>uncover motivations and emotions through in-depth focus groups and expert moderation</p>
+                </div>
+                <div class="s-card">
+                    <div class="s-num">03</div>
+                    <h3>survey programming</h3>
+                    <p>multilingual support and complex logic built to perform flawlessly on any device</p>
                 </div>
             </div>
         </section>
 
-        <section id="insights" class="bento-section">
-            <h2 class="section-label">market intelligence</h2>
-            <div class="bento-grid">
-                <div class="bento-item large-card">
-                    <h3>growth metrics</h3>
-                    <div class="chart">
-                        <div class="bar-col"><div class="bar" style="--h: 70%"></div><span>jan</span></div>
-                        <div class="bar-col"><div class="bar" style="--h: 50%"></div><span>feb</span></div>
-                        <div class="bar-col"><div class="bar" style="--h: 95%"></div><span>mar</span></div>
-                    </div>
-                </div>
-                <div class="bento-item stats-card">
-                    <div class="stat-num">99%</div>
-                    <p>data accuracy</p>
-                </div>
-                <div class="bento-item stats-card">
-                    <div class="stat-num">24/7</div>
-                    <p>live tracking</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="cta-section">
-            <div class="cta-card">
-                <h2>ready to lead the market</h2>
-                <div class="form-box">
-                    <input type="email" placeholder="enter your work email">
-                    <button>connect</button>
-                </div>
+        <section id="contact" class="contact-cta">
+            <div class="cta-inner">
+                <h2>ready to move your business forward?</h2>
+                <p>schedule a feasibility consultation in under 1 hour</p>
+                <button class="btn-white" onclick="showPopup()">contact an expert</button>
             </div>
         </section>
     </main>
 
-    <div id="popup" class="modal-bg">
+    <div id="popup" class="modal-wrapper">
         <div class="modal">
-            <h3>premium access</h3>
-            <p>your professional dashboard is ready to be unlocked</p>
-            <button onclick="closePopup()">dismiss</button>
+            <h3>request research feasibility</h3>
+            <p>our team usually responds within 60 minutes</p>
+            <input type="email" placeholder="work email address">
+            <button class="btn-primary">submit request</button>
+            <button class="btn-close" onclick="closePopup()">close</button>
         </div>
     </div>
 </body>
